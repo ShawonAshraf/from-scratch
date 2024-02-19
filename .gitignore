@@ -1,6 +1,6 @@
 .ipynb_checkpoints
 venv
-vscode/
+.vscode/
 .idea/
 __pycache__/
 tb_logs/
