@@ -4,22 +4,13 @@
 	"name": "Existing Dockerfile",
 	"build": {
 		// Sets the run context to one level up instead of the .devcontainer folder.
-		"context": "..",
+		"context": "../..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../devcontainer.Dockerfile"
+		"dockerfile": "../../devcontainer.Dockerfile"
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-	// set to optional so that it doesn't fail on cpu only machines
-	"hostRequirements": {
-		"gpu": "optional"
-	},
-	
-	// run args for container to enable gpu passthrough
-	"runArgs": [
-		"--gpus", "all"
-	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
