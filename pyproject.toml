@@ -5,6 +5,8 @@ description = "Various NLP, DL techniques and methods implemented from scratch"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
+package-mode = false
+
 [tool.poetry.dependencies]
 python = "^3.11"
 torch = "^2.2.2"
