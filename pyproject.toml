@@ -22,6 +22,7 @@ wandb = "^0.16.6"
 tensorboard = "^2.16.2"
 scikit-image = "^0.23.1"
 scikit-learn = "^1.4.2"
+jupyterlab = "^4.2.5"
 
 
 [tool.poetry.group.dev.dependencies]
