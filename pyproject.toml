@@ -23,6 +23,8 @@ tensorboard = "^2.16.2"
 scikit-image = "^0.23.1"
 scikit-learn = "^1.4.2"
 jupyterlab = "^4.2.5"
+voila = "^0.5.7"
+seaborn = "^0.13.2"
 
 
 [tool.poetry.group.dev.dependencies]
