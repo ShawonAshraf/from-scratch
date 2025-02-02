@@ -4,7 +4,7 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../devc.Dockerfile"
+		"dockerfile": "../../devc.Dockerfile"
 	},
 
     // Env variables from the host to be available in the 

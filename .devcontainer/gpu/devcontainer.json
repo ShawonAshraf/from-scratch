@@ -4,7 +4,7 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../devc.Dockerfile"
+		"dockerfile": "../../devc.Dockerfile"
 	},
 
     // Env variables from the host to be available in the 
@@ -16,11 +16,7 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-	// set to optional so that it doesn't fail on cpu only machines
-	"hostRequirements": {
-		"gpu": "optional"
-	},
-	
+
 	// run args for container to enable gpu passthrough
 	"runArgs": [
 		"--gpus", "all"
