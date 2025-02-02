@@ -3,7 +3,7 @@
 {
 	"name": "from-scratch-cpu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"dockerFile": "../../devc-cpu.Dockerfile",
+	"dockerFile": "../../devc.Dockerfile",
 	"mounts": [
 		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
 	],
@@ -17,7 +17,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "poetry install --with linux-cpu",
 
 	// Configure tool-specific properties.
 	"customizations": {

@@ -10,5 +10,4 @@ ENV HF_HOME=/workspaces/.cache/huggingface
 RUN pip install poetry
 COPY pyproject.toml poetry.lock ./
 RUN poetry config virtualenvs.create false
-RUN poetry install --with linux-gpu
 
