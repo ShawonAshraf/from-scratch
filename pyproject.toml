@@ -35,6 +35,15 @@ torch = {version = "^2.6.0", source = "pt-cpu-linux"}
 torchaudio = {version = "^2.6.0", source = "pt-cpu-linux"}
 torchvision = {version = "^0.21.0", source = "pt-cpu-linux"}
 
+[tool.poetry.group.linux-gpu]
+optional = true
+
+[tool.poetry.group.linux-gpu.dependencies]
+torch = "^2.6.0"
+torchaudio = "^2.6.0"
+torchvision = "^0.21"
+
+
 [[tool.poetry.source]]
 name = "pt-cpu-linux"
 url = "https://download.pytorch.org/whl/cpu"
