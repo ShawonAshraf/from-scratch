@@ -1,0 +1,12 @@
+[project]
+name = "from-scratch"
+version = "0.1.0"
+description = "implementation of machine learning concepts from scratch"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.4",
+]
