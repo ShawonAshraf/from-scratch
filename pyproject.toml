@@ -2,8 +2,9 @@
 name = "from-scratch"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Shawon Ashraf"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.12"
@@ -12,10 +13,6 @@ jupyter = "^1.1.1"
 matplotlib = "^3.10.0"
 pandas = "^2.2.3"
 scikit-learn = "^1.6.1"
-accelerate = "^1.3.0"
-transformers = "^4.48.2"
-einops = "^0.8.0"
-datasets = "^3.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -26,6 +23,12 @@ ruff = "^0.9.4"
 torch = "2.2.0"
 torchaudio = "2.2.0"
 torchvision = "0.17"
+
+
+[[tool.poetry.source]]
+name = "pt-cpu-linux"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
