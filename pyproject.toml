@@ -18,12 +18,22 @@ scikit-learn = "^1.6.1"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.9.4"
 
+[tool.poetry.group.intelmac]
+optional = true
 
 [tool.poetry.group.intelmac.dependencies]
-torch = "2.2.0"
-torchaudio = "2.2.0"
-torchvision = "0.17"
+torch = ">=2.2.0"
+torchaudio = ">=2.2.0"
+torchvision = ">=0.17"
 
+
+[tool.poetry.group.linux-cpu]
+optional = true
+
+[tool.poetry.group.linux-cpu.dependencies]
+torch = {version = "^2.6.0", source = "pt-cpu-linux"}
+torchaudio = {version = "^2.6.0", source = "pt-cpu-linux"}
+torchvision = {version = "^0.21.0", source = "pt-cpu-linux"}
 
 [[tool.poetry.source]]
 name = "pt-cpu-linux"
