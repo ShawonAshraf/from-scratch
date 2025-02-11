@@ -24,7 +24,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "poetry install --with linux-gpu",
+	"postCreateCommand": "poetry install --with linux",
 
 	// Configure tool-specific properties.
 	"customizations": {

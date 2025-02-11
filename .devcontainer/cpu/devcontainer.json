@@ -17,7 +17,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "poetry install --with linux-cpu",
+	"postCreateCommand": "poetry install --with linux",
 
 	// Configure tool-specific properties.
 	"customizations": {
