@@ -3,7 +3,7 @@
 {
 	"name": "from-scratch-gpu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"dockerFile": "../../devc.Dockerfile",
+	"dockerFile": "../devc.Dockerfile",
 	"mounts": [
 		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
 	],
@@ -24,7 +24,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "poetry install --with linux",
+	// "postCreateCommand": "",
 
 	// Configure tool-specific properties.
 	"customizations": {
