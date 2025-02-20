@@ -9,6 +9,7 @@ dependencies = [
     "altair>=5.5.0",
     "datasets>=3.3.2",
     "einops>=0.8.1",
+    "ipython>=8.32.0",
     "jupyter>=1.1.1",
     "lightning>=2.5.0.post0",
     "matplotlib>=3.10.0",
