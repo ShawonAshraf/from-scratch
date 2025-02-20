@@ -5,10 +5,9 @@
 ## env setup
 
 ```bash
-# old intel macs
-poetry install --with intelmac
+uv venv
+source .venv/bin/activate
+uv sync
 
-
-# linux gpu
-poetry install --with linux
+# or just use the devcontainer
 ```
