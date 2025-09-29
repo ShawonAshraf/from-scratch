@@ -5,9 +5,7 @@
 ## env setup
 
 ```bash
-uv venv
+python -m venv .venv
 source .venv/bin/activate
-uv sync
-
-# or just use the devcontainer
+pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu129
 ```
