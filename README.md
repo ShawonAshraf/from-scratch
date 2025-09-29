@@ -5,7 +5,9 @@
 ## env setup
 
 ```bash
-python -m venv .venv
+uv sync
+# macOS / linux
 source .venv/bin/activate
-pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu129
+# windows
+.\.venv\Scripts\activate
 ```
